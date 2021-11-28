@@ -1,11 +1,19 @@
 [
   {
+    "name": "AI Platform PipelinesJobs",
+    "url": "https://console.cloud.google.com/ai-platform/pipelines/clusters?project={{.ProjectID}}"
+  },
+  {
     "name": "AI Platform Jobs",
     "url": "https://console.cloud.google.com/ai-platform/jobs?project={{.ProjectID}}"
   },
   {
     "name": "AI Platform Notebooks",
     "url": "https://console.cloud.google.com/ai-platform/notebooks/instances?project={{.ProjectID}}"
+  },
+  {
+    "name": "Dataproc Clusters",
+    "url": "https://console.cloud.google.com/dataproc/clusters?project={{.ProjectID}}"
   },
   {
     "name": "App Engine",
