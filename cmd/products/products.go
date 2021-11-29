@@ -4,13 +4,13 @@ import (
 	"bytes"
 	"encoding/json"
 	"flag"
+	"github.com/deanishe/awgo/fuzzy"
 	"io/ioutil"
 	"log"
 	"net/url"
 	"os"
+	"strings"
 	"text/template"
-
-	"github.com/deanishe/awgo/fuzzy"
 
 	aw "github.com/deanishe/awgo"
 )
@@ -44,6 +44,7 @@ type ProductTemplate struct {
 
 type urlTemplate struct {
 	ProjectID string
+	KfpHost string
 }
 
 func readProducts() ([]ProductTemplate, error) {
@@ -66,8 +67,10 @@ func run() {
 	wf.Args()
 	flag.Parse()
 
+	kfpHost := os.Getenv(strings.Replace(project, "-", "_", -1) + "_kfp_host")
 	templateArgs := urlTemplate{
 		ProjectID: project,
+		KfpHost: kfpHost,
 	}
 
 	products, err := readProducts()

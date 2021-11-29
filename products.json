@@ -1,15 +1,15 @@
 [
   {
-    "name": "AI Platform PipelinesJobs",
+    "name": "Kfp Pipelines",
+    "url": "https://{{.KfpHost}}.pipelines.googleusercontent.com/#/pipelines"
+  },
+  {
+    "name": "Kfp Runs",
+    "url": "https://{{.KfpHost}}.pipelines.googleusercontent.com/#/runs"
+  },
+  {
+    "name": "AI Pipelines",
     "url": "https://console.cloud.google.com/ai-platform/pipelines/clusters?project={{.ProjectID}}"
-  },
-  {
-    "name": "AI Platform Jobs",
-    "url": "https://console.cloud.google.com/ai-platform/jobs?project={{.ProjectID}}"
-  },
-  {
-    "name": "AI Platform Notebooks",
-    "url": "https://console.cloud.google.com/ai-platform/notebooks/instances?project={{.ProjectID}}"
   },
   {
     "name": "Dataproc Clusters",
