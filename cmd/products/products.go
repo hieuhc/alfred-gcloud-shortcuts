@@ -110,7 +110,7 @@ func run() {
 }
 
 func appendURLParameters(urlString string, keyval map[string]string) string {
-	u, err := url.ParseRequestURI(urlString)
+	u, err := url.Parse(urlString)
 	if err != nil {
 		log.Printf("silently failed to parse url: %v", err)
 		return urlString
